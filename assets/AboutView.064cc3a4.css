@@ -1,0 +1,1 @@
+.subtitle{position:relative;text-align:center;font-size:50px;width:90%;left:50vw;transform:translate(-50%)}.about{position:relative;text-align:center;font-size:10px;width:90%;left:50vw;transform:translate(-50%)}@media (min-width: 1024px){.about{min-height:100vh;display:flex;align-items:center}}
