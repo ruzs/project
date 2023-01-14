@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <style>
+    * {
+      transition-duration: 0.5s;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container mt-3 text-center">
+    <h3 class="fw-bold text-primary">天氣預報</h3>
+    <hr>
+    <button class="btn btn-dark m-2 mx-3 fw-bold" onclick="show('all')">全部</button>
+    <button class="btn btn-primary m-2 fw-bold" onclick="show('北部')">北部</button>
+    <button class="btn btn-success m-2 fw-bold" onclick="show('中部')">中部</button>
+    <button class="btn btn-warning text-white m-2 fw-bold" onclick="show('南部')">南部</button>
+    <button class="btn btn-danger text-white m-2 fw-bold" onclick="show('東部')">東部</button>
+    <hr>
+    <h5>區域</h5>
+    <select name="" id="sel" class="btn btn-dark dropdown-toggle">
+      <option value="all" class="dropdown-item">All</option>
+      <option value="北部" class="dropdown-item bg-primary">北部</option>
+      <option value="中部" class="dropdown-item bg-success">中部</option>
+      <option value="南部" class="dropdown-item bg-warning">南部</option>
+      <option value="東部" class="dropdown-item bg-danger">東部</option>
+      <option value="all" class="dropdown-item">------</option>
+    </select>
+    <hr>
+    <table id="table_id" class="table table-striped">
+      <thead></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
+    integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+  <script src="./dist/script.js"></script>
+</body>
+
+</html>
